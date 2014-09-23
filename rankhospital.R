@@ -24,7 +24,7 @@ rankhospital <- function(state, outcome, num)
   ## clean non numeric data
   idx1 <- d1[, column] != "Not Available"
   ## get rate and hospitals
-  rate  <- as.numeric(d1[idx1, column])
+  rate      <- as.numeric(d1[idx1, column])
   hospitals <- d1[idx1,"Hospital.Name"]
   
   ##return the hospital
